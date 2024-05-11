@@ -6,7 +6,7 @@
     </div>
     <div class="sugestion-list">
       <ul>
-        <li *ngFor="let question of sugestionTopic.questions">{{ question }}</li>
+        <li *ngFor="let question of sugestionTopic.questions" (click)="selectQuestion(question)">{{ question }}</li>
       </ul>
     </div>
   </div>

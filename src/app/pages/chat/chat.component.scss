@@ -1,4 +1,5 @@
 .chat-wrapper {
+  height: 90%;
   header {
     display: flex;
     align-items: center;
@@ -26,5 +27,8 @@
 
       }
     }
+  }
+  .chat-content {
+    height: 100%;
   }
 }

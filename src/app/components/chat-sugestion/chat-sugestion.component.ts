@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-chat-sugestion',
@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './chat-sugestion.component.scss',
 })
 export class ChatSugestionComponent {
+  @Output() questionSelected = new EventEmitter<string>();
+
   sugestionTopics = [
     {
       title: 'Duvidas',
@@ -37,4 +39,8 @@ export class ChatSugestionComponent {
       ],
     },
   ];
+
+  selectQuestion(question: string): void {
+    this.questionSelected.emit(question);
+  }
 }
