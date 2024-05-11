@@ -1,0 +1,13 @@
+<div class="formulary">
+  <form [formGroup]="form">
+    <!-- <div>
+      <input type="text" formControlName="insertQuestion">
+    </div>
+    <button (click)="onSubmit()">send</button> -->
+    <div class="chatbot-input-container">
+      <input type="text" class="chatbot-input" formControlName="insertQuestion" placeholder="Digite sua mensagem...">
+      <button (click)="onSubmit()" class="chatbot-send-button"><img src="/assets/send.svg" alt=""></button>
+    </div>
+  </form>
+  
+</div>
