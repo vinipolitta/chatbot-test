@@ -1,0 +1,13 @@
+<div class="sugestion-wrapper">
+  <div class="sugestion-topic" *ngFor="let sugestionTopic of sugestionTopics">
+    <div class="sugetion-header">
+      <img [src]="sugestionTopic.icon" alt="{{ sugestionTopic.title }}">
+      <span>{{ sugestionTopic.title }}</span>
+    </div>
+    <div class="sugestion-list">
+      <ul>
+        <li *ngFor="let question of sugestionTopic.questions">{{ question }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

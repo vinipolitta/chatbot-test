@@ -1,0 +1,47 @@
+.sugestion-wrapper,
+.sugestion-topic,
+.sugetion-header,
+.sugestion-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sugestion-wrapper {
+  gap: 36px;
+
+  .sugestion-topic {
+    gap: 18px;
+    width: 100%;
+
+    span {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: bold;
+    }
+
+    .sugestion-list {
+      ul {
+        list-style: none;
+      }
+
+      gap: 8px;
+      width: 100%;
+
+
+      li {
+        width: 100%;
+        max-width: 320px;
+        background-color: var(--bg-secondary);
+        padding: 10px 16px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        cursor: pointer;
+      }
+    }
+  }
+}
